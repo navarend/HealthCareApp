@@ -1,3 +1,52 @@
-<p>
-  charts-one works!
-</p>
+<div class="row">
+       <div class="col-6">
+         <div class="card">
+             <div class="card-body">
+                <app-doughnut-chart
+                  [doughnutChartLabels]='charts.chart1.labels'
+                  [doughnutChartData]='charts.chart1.data'
+                  [doughnutChartType]='charts.chart1.type'
+                  [doughnutChartTitle]='charts.chart1.legend'>
+                </app-doughnut-chart>
+             </div>
+         </div>
+       </div>
+       <div class="col-6">
+         <div class="card">
+             <div class="card-body">
+                <app-doughnut-chart
+                  [doughnutChartLabels]='charts.chart2.labels'
+                  [doughnutChartData]='charts.chart2.data'
+                  [doughnutChartType]='charts.chart2.type'
+                  [doughnutChartTitle]='charts.chart2.legend'>
+                </app-doughnut-chart>
+             </div>
+         </div>
+       </div>
+   </div>
+   <div class="row">
+          <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                   <app-doughnut-chart
+                    [doughnutChartLabels]='charts.chart3.labels'
+                    [doughnutChartData]='charts.chart3.data'
+                    [doughnutChartType]='charts.chart3.type'
+                    [doughnutChartTitle]='charts.chart3.legend'>
+                  </app-doughnut-chart>
+                </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                   <app-doughnut-chart
+                    [doughnutChartLabels]='charts.chart4.labels'
+                    [doughnutChartData]='charts.chart4.data'
+                    [doughnutChartType]='charts.chart4.type'
+                    [doughnutChartTitle]='charts.chart4.legend'>
+                  </app-doughnut-chart>
+                </div>
+            </div>
+          </div>
+      </div>

@@ -12,6 +12,7 @@ import { SharedModule } from '../shared/shared.module';
 import { DoughnutChartComponent } from '../components/doughnut-chart/doughnut-chart.component';
 
 import { IncrementerComponent } from '../components/incrementer/incrementer.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IncrementerComponent } from '../components/incrementer/incrementer.comp
     ProgressComponent,
     PagesComponent,
     ChartsOneComponent,IncrementerComponent,
-    DoughnutChartComponent
+    DoughnutChartComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,

@@ -4,6 +4,7 @@ import { PagesComponent } from '../pages/pages.component';
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
 import { ProgressComponent } from '../pages/progress/progress.component';
 import { ChartsOneComponent } from '../pages/charts-one/charts-one.component';
+import { AccountSettingsComponent } from '../pages/account-settings/account-settings.component';
 
 const PAGES_ROUTES: Routes = [
   {
@@ -13,6 +14,7 @@ const PAGES_ROUTES: Routes = [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'progress', component: ProgressComponent },
       { path: 'chartsOne', component: ChartsOneComponent },
+      { path: 'accountSettings', component: AccountSettingsComponent },
       { path: '', pathMatch: 'full', redirectTo: 'pages' },
     ]
   }

@@ -26,7 +26,7 @@ export class RxjsComponent implements OnInit, OnDestroy {
   CountThree(): Observable<any>{
     return new Observable( observer => {
       let count = 0;
-      let interval = setInterval( () => {
+      const interval = setInterval( () => {
         count += 1;
         const objNumber = { value: count };
         observer.next( objNumber );
@@ -40,7 +40,7 @@ export class RxjsComponent implements OnInit, OnDestroy {
         //  observer.error('Sorry something was wrong');
       //  }
       }, 1000);
-    }).pipe( map( resp => resp.value ),
+    }).pipe( map( resp => resp['value'] ),
              filter( (value, index) => {// only return numbers odd.
                if ( (value % 2) === 1 ){ // number odd
                  return true;
